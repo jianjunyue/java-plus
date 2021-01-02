@@ -1,10 +1,12 @@
-package com.java.plus.myspring;
+package com.java.plus.myspring.test1;
 
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Component 
 public class TestServiceImpl implements TestService {
+	
+	
 
 	@Override
     public String hello(){

@@ -1,8 +1,7 @@
-package com.java.plus.myspring;
+package com.java.plus.myspring.test1;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import com.java.plus.myspring.ApplicationContextUtil;
+import org.springframework.boot.autoconfigure.SpringBootApplication; 
 
 @SpringBootApplication
 public class StartMain {
@@ -11,7 +10,7 @@ public class StartMain {
 		SpringApplication.run(StartMain.class, args);
 		
 		
-		App app=new App();
-		app.run();
+//		App app=new App();
+//		app.run();
 	}
 }

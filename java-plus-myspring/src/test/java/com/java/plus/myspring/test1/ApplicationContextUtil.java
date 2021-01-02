@@ -1,4 +1,4 @@
-package com.java.plus.myspring;
+package com.java.plus.myspring.test1;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
