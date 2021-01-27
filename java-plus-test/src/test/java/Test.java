@@ -2,6 +2,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
  
 
 public class Test {
@@ -18,6 +19,9 @@ public class Test {
 		
 		System.out.println(list);
 		System.out.println(1%3000);
+		
+		ConcurrentHashMap<String,String> map=new ConcurrentHashMap<>();
+		map.put("", "");
 	}
 
 }

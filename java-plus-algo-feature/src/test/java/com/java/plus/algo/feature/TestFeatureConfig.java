@@ -13,7 +13,7 @@ public class TestFeatureConfig {
     public static void main(String args[]) {
         FeatureConfig featureConfig = FeatureTransformUtils.loadFeatureConfig(6);
         Map<String,Object> map = new HashMap<>();
-        map.put("appid","android_app");
+        map.put("appid","TextOperator.dayOfWeek(date)");
         map.put("tab","美车节");
         map.put("from_id","详情");
         map.put("prdtype","unclassified");
