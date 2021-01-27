@@ -34,7 +34,7 @@ public class JobStart {
 
 		BaiduReaderCore.run();
 
-//		System.out.println("-----------STRAT---------");
+		System.out.println("-----------STRAT---------");
 //		main11111();
 		System.out.println("-----------完成---------");
 	}

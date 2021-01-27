@@ -26,13 +26,13 @@ public class Test {
 					action.getTagJson(), action.getBaiduBaseJson() };
 			list.add(str);
 		});
-		String filePath = "D:/data/baidu/baidutag_1226_utf8.csv";
+		String filePath = "D:/data/baidu/baidutag_0127_utf8.csv";
 		CsvWriter csv = CsvUtil.getWriter(filePath, CharsetUtil.CHARSET_UTF_8);
 		csv.write(list);
 		System.out.println(list.size());
 		System.out.println("-----------main完成---------");
 		
-		  filePath = "D:/data/baidu/baidutag_1226_utf8_sample.csv";
+		  filePath = "D:/data/baidu/baidutag_0127_utf8_sample.csv";
 		  csv = CsvUtil.getWriter(filePath, CharsetUtil.CHARSET_UTF_8);
 		csv.write(list.subList(0, 1000));
 	}
@@ -67,7 +67,7 @@ public class Test {
 
 	private static Map<String, BaiduContent> readerMap() {
 		Map<String, BaiduContent> map = new HashMap<>();
-		File f = new File("D:\\data\\baidunlp");
+		File f = new File("D:\\data\\xlsx");
 		List<File> fileList = (List<File>) FileUtils.listFiles(f, null, false);
 		List<BaiduContent> comments = new ArrayList<>();
 		fileList.forEach(action -> {
