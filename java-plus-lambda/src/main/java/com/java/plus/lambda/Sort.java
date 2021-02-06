@@ -20,9 +20,7 @@ public class Sort {
 //		 PrintHelper.print(sort.lambda1(list));
 		 PrintHelper.print(sort.lambda2(list));
 		 PrintHelper.print(sort.lambda1_reversed(list));
-		 PrintHelper.print(sort.lambda1_thenComparing(list));
-		 
-		
+		 PrintHelper.print(sort.lambda1_thenComparing(list)); 
 		
 	}
 
