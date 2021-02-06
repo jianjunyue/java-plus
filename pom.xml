@@ -21,6 +21,8 @@
 		<module>java-plus-myspring</module>
     <module>java-plus-dag</module>
     <module>java-plus-reactor</module>
+    <module>java-plus-lambda</module>
+    <module>java-plus-future</module>
   </modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
