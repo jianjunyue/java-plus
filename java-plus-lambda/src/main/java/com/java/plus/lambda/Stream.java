@@ -1,6 +1,7 @@
 package com.java.plus.lambda;
 
 import java.util.List;
+import java.util.stream.Collector;
 
 import com.java.plus.lambda.data.DataHelper;
 import com.java.plus.lambda.data.PrintHelper;
@@ -11,6 +12,8 @@ public class Stream {
 		Stream stream = new Stream();
 
 		List<Dish> list = DataHelper.getDishs();
+		
+//		Collectors
 
 	}
 }
