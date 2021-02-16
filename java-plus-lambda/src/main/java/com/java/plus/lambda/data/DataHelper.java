@@ -1,5 +1,6 @@
 package com.java.plus.lambda.data;
 
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +21,17 @@ public class DataHelper {
 	}
 	
 	
+	public static List<Apple>  getApples(int count){
+		 List<Apple> list=new ArrayList<>();
+		 
+		 for(int i=0;i<count;i++) {
+		 list.add(new Apple("apple"+i,LocalTime.now().getNano()%1000,Color.GREEN));
+		 } 
+		 
+		return list;
+	}
+	
+	
 	public static List<Dish>  getDishs(){
 		 List<Dish> list=new ArrayList<>();
 		 list.add(new Dish("pork",false,800,Dish.Type.MEAT));
@@ -34,6 +46,9 @@ public class DataHelper {
 		 
 		return list;
 	}
+	
+	
+	
 	
 
 }
