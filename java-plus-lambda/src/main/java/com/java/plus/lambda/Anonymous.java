@@ -1,6 +1,7 @@
-package com.java.plus.lambda;
+package com.java.plus.lambda; 
+import java.util.function.Predicate;
 
-import com.java.plus.lambda.common.Predicate;
+import com.java.plus.lambda.common.MyPredicate;
 import com.java.plus.lambda.model.Apple;
 import com.java.plus.lambda.model.Color;
 
@@ -23,7 +24,7 @@ public class Anonymous {
 
 	}
 
-	private Predicate<Apple> predicate = new Predicate<Apple>() {
+	private  Predicate<Apple> predicate = new  Predicate<Apple>() {
 		public boolean test(Apple apple) {
 			return apple.getWeight() > 100;
 		}

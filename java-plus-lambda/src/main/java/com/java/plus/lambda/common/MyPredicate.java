@@ -3,8 +3,8 @@ package com.java.plus.lambda.common;
 
 
 @FunctionalInterface
-public interface Predicate<T> {
+public interface MyPredicate<T> {
 
-	boolean test(T t); 
+	boolean run(T t); 
 
 }
