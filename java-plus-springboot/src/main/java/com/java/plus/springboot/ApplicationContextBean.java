@@ -31,7 +31,7 @@ public class ApplicationContextBean implements ApplicationContextAware {
 
 		if (CollectionUtils.isNotEmpty(strategyExecutors)) {
 
-			strategyExecutors.stream().forEach(strategy -> strategy.doWeight(""));
+			strategyExecutors.stream().forEach(strategy -> strategy.execute(""));
 		}
 
 	}

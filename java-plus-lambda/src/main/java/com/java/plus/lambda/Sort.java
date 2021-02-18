@@ -4,10 +4,11 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.google.common.collect.ComparisonChain;
 import com.java.plus.lambda.data.DataHelper;
 import com.java.plus.lambda.data.PrintHelper;
 import com.java.plus.lambda.model.Apple;
-
+  
 public class Sort {
 	 
 	public static void main(String[] args) {
@@ -23,8 +24,22 @@ public class Sort {
 		 PrintHelper.print(sort.lambda1_thenComparing(list)); 
 		
 	}
+	
+ 
+	private static final Comparator<Apple> comparator = Comparator.comparing(Apple::getWeight);
+	private static final Comparator<Apple> comparator1 = (a1, a2) -> a1.getWeight() < a2.getWeight() ? -1
+			: (a1.getWeight() > a2.getWeight() ? 1 : 0); // 待研究
+	private static final Comparator<Apple> comparator2 = (o1, o2) -> {
+		if (o1.getWeight() < o2.getWeight()) {
+			return -1;
+		} else if (o1.getWeight() > o2.getWeight()) {
+			return 1;
+		} else {
+			return 0;
+		}
+	};
 
-	/**
+    /**
 	 * 匿名类方式
 	 */
 	public List<Apple> anonymous(List<Apple> apples) {
