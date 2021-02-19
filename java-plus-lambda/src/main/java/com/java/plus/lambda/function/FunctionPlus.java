@@ -4,14 +4,18 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
-import java.util.function.Comparator
+import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
 
 import com.java.plus.lambda.common.MyPredicate;
 
 /**
- * Function Function< T, R > 接收T对象，返回R对象 Predicate Predicate< T >
- * 接收T对象并返回boolean Consumer Consumer< T > 接收T对象，不返回值 Supplier Supplier< T >
- * 提供T对象（例如工厂），不接收值
+ * Function Function< T, R > 接收T对象，返回R对象 
+ * Predicate Predicate< T >  接收T对象并返回boolean 
+ * Consumer Consumer< T >    接收T对象，不返回值 
+ * Supplier Supplier< T >    提供T对象（例如工厂），不接收值
+ * 
+ * BiConsumer<T, U>    接收T和U对象，不返回值 
  * 
  */
 public class FunctionPlus {
