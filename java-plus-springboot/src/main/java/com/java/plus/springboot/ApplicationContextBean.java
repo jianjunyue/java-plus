@@ -16,7 +16,7 @@ import com.java.plus.springboot.flow.iface.IWeighting;
 @Service
 public class ApplicationContextBean implements ApplicationContextAware {
 
-	private ApplicationContext applicationContext;
+	private static ApplicationContext applicationContext;
 
 	@Override
 	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
@@ -38,7 +38,7 @@ public class ApplicationContextBean implements ApplicationContextAware {
 
 	@SuppressWarnings("unchecked")
 	private <T> List<T> buildRankStrategyList(List<String> rankStrategyList, Class<T> clazz) {
-		return rankStrategyList.stream().map(rs -> (T) applicationContext.getBean(rs))
+		return rankStrategyList.stream().map(rs -> (T) this.applicationContext.getBean(rs))
 				.filter(bean -> clazz.isAssignableFrom(bean.getClass())).collect(Collectors.toList());
 	}
 
