@@ -24,6 +24,7 @@
     <module>java-plus-lambda</module>
     <module>java-plus-future</module>
     <module>java-plus-springboot</module>
+    <module>java-plus-predict</module>
   </modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

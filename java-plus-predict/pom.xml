@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>java-plus</groupId>
+		<artifactId>java-plus</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>java-plus-predict</groupId>
+	<artifactId>java-plus-predict</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>java-plus-predict</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>ml.dmlc</groupId>
+			<artifactId>xgboost4j</artifactId>
+			<version>0.90</version>
+		</dependency>
+		<dependency>
+			<groupId>org.tensorflow</groupId>
+			<artifactId>tensorflow-core-api</artifactId>
+			<version>0.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.tensorflow</groupId>
+			<artifactId>tensorflow-core-platform-mkl</artifactId>
+			<version>0.2.0</version>
+		</dependency>
+			<dependency>
+			<groupId>com.microsoft.ml.lightgbm</groupId>
+			<artifactId>lightgbmlib</artifactId>
+			<version>2.3.180</version>
+		</dependency>
+	</dependencies>
+</project>
